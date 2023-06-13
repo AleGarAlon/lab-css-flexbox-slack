@@ -1,3 +1,54 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family:  Helvetica, Arial, sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
 /*
 background purple: #540B51
 background ivory: #F3EAE2
@@ -8,3 +59,277 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+
+.navLinks {
+    display: none;
+}
+
+
+img {
+    width: 100px;
+}
+
+.topNav {
+    margin-top: 20px;
+    display:flex;
+    justify-content: space-between;
+
+
+
+}
+
+.topNav button img {
+    width: 20px;
+    background-color: #540B51;
+}
+.button {
+    background-color: #540B51;
+    border: none;
+    padding-top: 4px;
+}
+
+body {
+    background-color: #540B51;
+}
+
+.header h1 {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 550;
+    display:flex;
+    margin: 25px 25px;
+    
+}
+
+.header p{
+    color: white;
+    text-align: center;
+    font-size: 0.7rem;
+    margin-bottom: 15px;
+}
+
+.yellowSpan {
+    color:#ECB12F;
+}
+
+/* still on work */
+.signUp {
+    
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 10px;
+    height: 80px;
+    
+}
+
+.email {
+    border-radius: 3px;
+    border: none;
+    flex-basis: 50%;
+    color:#540B51;
+    font-size: 0.8rem;
+    font-weight: bold;
+    height: 50%;
+}
+
+.google {
+    display: flex;
+    border: none;
+    background-color: #4285F4;
+    border-radius: 3px;
+    height: 40px;
+    color:white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    height: 50%;
+    align-items: center;
+
+    
+
+}
+
+.google img{
+    background-color: white;
+    width: 15px;
+    margin-right: 52px;
+    
+    
+
+}
+.googleSpan {
+    background-color: #4285F4;
+    color: white
+    
+}
+
+.purpleImg {
+    width: 100vw;
+    height: 250px;
+    object-fit: cover;
+    object-position: -20% 0;
+    
+    
+}
+main {
+    background-color: #F3EAE2;
+    width: 100%;
+}
+
+.trusted p{
+   padding-top: 25px;
+   padding-bottom: 25px;
+   text-align: center;
+   padding-left: 8px;
+   padding-right: 8px;
+   text-transform: uppercase;
+   font-weight: bold;
+   font-size: 0.7rem;
+}
+
+.firstIcons img {
+    width: 40px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.firstIcons {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 20px; 
+}
+
+.lastIcons {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 20px; 
+    gap: 0;
+
+}
+
+.mobileImg {
+    width: 100vw;
+    margin-bottom: 25px;
+    margin-top: 40px;
+}
+
+.Section h2{
+    margin: 0px 10px;
+    margin-bottom: 15px;
+    font-weight: bold;  
+    font-size: 1.3em; 
+}
+
+.Section p{
+    margin: 0px 10px;
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+}
+
+.link {
+    color:#2E71A6;
+    text-decoration: none;
+    margin: 0px 10px;
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+}
+
+.team {
+    background-color: white;
+}
+
+.team h3 {
+    padding-top: 40px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 40px 25px 15px;
+}
+ 
+.teamIntro {
+    text-align: center;
+    font-size: .8rem;
+    margin: 10px 10px;
+}
+.teamIntro span {
+    margin: 10px 30px
+}
+
+.team div{
+    display: flex;
+    margin: 15px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 10px;
+    height: 80px;
+    
+}
+.purpleButton {
+    text-transform: uppercase;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color:  #540B51;
+    flex-basis: 50%;
+    color:white;
+    font-size: 0.7rem;
+    height: 50%;
+    background-color: #540B51;
+    font-weight: bold;
+}
+
+
+.whiteButton {
+    text-transform: uppercase;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color:;
+    flex-basis: 50%;
+    color:#540B51;
+    font-size: 0.7rem;
+    font-weight: bold;
+    height: 50%;
+    background-color: white;
+}
+.team ul {
+    text-align: center;
+    margin: 25px 35%; 
+    inline-size: 20 px;
+}
+
+.team ul li{
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+.percent {
+    color:#540B51;
+    font-size: 2rem;  
+    
+}
+
+.quote {
+    
+    font-size: 0.6rem;
+}
+    
+.hq {
+    display: flex;
+    flex-direction: column;
+    background-color: #540B51;
+    color: white;
+    padding-top: 40px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 40px 25px 15px;
+}
+
